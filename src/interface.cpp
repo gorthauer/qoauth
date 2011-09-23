@@ -1083,4 +1083,4 @@ QByteArray QOAuth::InterfacePrivate::createPlaintextSignature( const QByteArray 
     return digest.toPercentEncoding();
 }
 
-#include "moc_interface.cpp"
+#include "interface.moc"
