@@ -10,11 +10,8 @@ set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 # Search for source and headers in source directory
 file(GLOB SRC "${SRC_DIR}/*.cpp")
 file(GLOB HDR "${SRC_DIR}/*.h")
-
 wrap_cpp(MOC_SRC ${HDR})
 
-#message(${MOC_SRC})
-message(${HDR})
 
 # This project will generate library
 add_library(qoauth SHARED ${SRC} ${MOC_SRC} ${HDR})
