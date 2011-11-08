@@ -30,3 +30,9 @@ target_link_libraries(qoauth
 	${QT_LIBRARIES}
 	${QCA2_LIBRARIES}
 	)
+
+install(TARGETS qoauth
+        RUNTIME DESTINATION ${BINDIR}
+        LIBRARY DESTINATION ${LIBDIR}
+        ARCHIVE DESTINATION ${LIBDIR}
+)
