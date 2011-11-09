@@ -32,7 +32,7 @@ target_link_libraries(qoauth
 	)
 
 install(TARGETS qoauth
-        RUNTIME DESTINATION ${BINDIR}
+        RUNTIME DESTINATION ${RLIBDIR}
         LIBRARY DESTINATION ${LIBDIR}
         ARCHIVE DESTINATION ${LIBDIR}
 )
