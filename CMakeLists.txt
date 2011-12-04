@@ -13,7 +13,7 @@ file(GLOB HDR "${SRC_DIR}/*.h")
 moc_wrap_cpp(MOC_SRCS ${HDR})
 
 # This project will generate library
-add_library(qoauth SHARED ${SRC} ${HDR} ${MOC_SRCS})
+add_library(qoauth STATIC ${SRC} ${HDR} ${MOC_SRCS})
 
 include_directories(.
 	..
