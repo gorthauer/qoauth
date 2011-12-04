@@ -23,7 +23,8 @@ include_directories(.
 )
 
 update_compiler_flags(qoauth)
-add_definitions(-DQOAUTH)
+#add_definitions(-DQOAUTH)
+add_definitions(-DQOAUTH_STATIC)
 
 target_link_libraries(qoauth
 	${QT_LIBRARIES}
